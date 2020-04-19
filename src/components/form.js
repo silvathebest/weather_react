@@ -1,12 +1,10 @@
 import React from "react";
 
-export default class Form extends React.Component {
-  render() {
-    return (
-      <div>
-        Компонент с формой
-      </div>
-    );
-  }
+const Form = props => (
+  <form onSubmit={ props.weather }>
+    <input type="text" name='city' placeholder='City'/>
+    <button>I want to know a weather</button>
+  </form>
+);
 
-}
+export default Form;
